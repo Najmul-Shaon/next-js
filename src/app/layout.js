@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <NavBar></NavBar>
-        <main className="h-[calc(100vh-120px)]">{children}</main>
+        <main className="h-[calc(100vh-120px)] place-items-center">{children}</main>
         <footer>
           <p>This is the foooter</p>
         </footer>

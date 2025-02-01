@@ -1,13 +1,22 @@
+import Link from "next/link";
 import React from "react";
 
 const NavBar = () => {
   return (
     <nav>
-      <ul>
-        <li>Home</li>
-        <li>Service</li>
-        <li>About</li>
-        <li>Contact</li>
+      <ul className="flex justify-around">
+        <Link href="/">
+          <li>Home</li>
+        </Link>
+        <Link href="/service">
+          <li>Service</li>
+        </Link>
+        <Link href="/about">
+          <li>About</li>
+        </Link>
+        <Link href="/contact">
+          <li>Contact</li>
+        </Link>
       </ul>
     </nav>
   );
